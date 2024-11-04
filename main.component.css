@@ -1,0 +1,18 @@
+.registration_form {
+    display: flex;
+    align-items:baseline; 
+    justify-content: center;
+    margin-top: 15px;
+}
+#back{
+    background-image: url('https://blog.travelcarma.com/wp-content/uploads/2018/08/bus-booking-1-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.animation{
+    animation:  blinker 1.5s linear infinite;
+    color: rgb(77, 2, 2);
+    size: "100px";
+}
