@@ -1,0 +1,31 @@
+
+<div style="text-align: center;">
+    <table class="table table-striped table-group-divider" border="10"
+        style="border-collapse: separate ;border-spacing: 5px; background-color: rgb(70, 162, 190);">
+        <thead>
+            <tr>
+                <th style="color:red">Id</th>
+                <th style="color:red">SOURCE</th>
+                <th style="color:red">DESTINATION</th>
+                <th style="color:red">NAME</th>
+                <th style="color: red;">MOBILE</th>
+                <th style="color: red;">Update Operation</th>
+                <th style="color:red">Delete Operaation</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of v">
+                <td style="color: rgb(46, 184, 69); ">{{data.id}}</td>
+                <td style="color: rgb(174, 92, 187); ">{{data.source}}</td>
+                <td style="color: rgb(54, 134, 177);">{{data.destination}}</td>
+                <td style="color: rgb(54, 134, 177);">{{data.name}}</td>
+                <td style="color: rgb(175, 54, 177);">{{data.mobile}}</td>
+                <td style="color:aqua"> <button style="background-color: bisque;"[routerLink]="'/main'">update</button> </td>
+                <td style="color:aqua"> <button style="background-color: aqua;" (click)="delete(data.id)">delete</button> </td>
+            </tr>
+        </tbody>
+    </table>
+    <button class="btn btn-primary" style="margin-left: 10px;" [routerLink]="['/main']">Back to Booking</button>
+
+</div>
